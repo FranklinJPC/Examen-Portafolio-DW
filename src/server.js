@@ -4,9 +4,9 @@ const methodOverride = require('method-override')
 const passport = require('passport');
 const session = require('express-session');
 const fileUpload = require('express-fileupload')
+const path = require('path')
 
 // Inicializaciones 
-const path = require('path')
 const app = express()
 require('./config/passport')
 // Configuraciones
