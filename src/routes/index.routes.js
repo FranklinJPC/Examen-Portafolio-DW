@@ -7,6 +7,6 @@ const {renderIndex,renderAbout, renderMoreInfo} = require('../controllers/index.
 
 router.get('/',renderIndex)
 router.get('/login',renderAbout)
-router.get('/informacionPortafolio/:id' ,renderMoreInfo)
+router.get('/informacionPortafolio/:id/:idUS' ,renderMoreInfo)
 
 module.exports = router

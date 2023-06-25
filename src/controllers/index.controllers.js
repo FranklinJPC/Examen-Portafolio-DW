@@ -1,4 +1,5 @@
 const Portfolio = require('../models/Portafolio')
+const User = require('../models/User')
 
 const renderIndex = async(req,res)=>{
     const portfolios = await Portfolio.find().lean()
@@ -9,8 +10,9 @@ const renderAbout = (req,res)=>{
 }
 const renderMoreInfo = async(req, res) =>{
     const portfolio = await Portfolio.findById(req.params.id).lean()
-    // console.log(portfolio)
-    res.render('informacionPortafolio', {portfolio})
+    const usuario = await User.findById(req.params.idUS).lean()
+    // console.log(usuario)
+    res.render('informacionPortafolio', {portfolio, usuario})
 }
 module.exports ={
     renderIndex, 

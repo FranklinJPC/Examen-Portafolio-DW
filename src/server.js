@@ -20,15 +20,12 @@ app.engine('.hbs', engine({
     extname:'.hbs' // Extesion de las plantillas
 }))
 app.set('view engine', '.hbs')
-//app.use(require('./routers/index.routes'))
 app.use(fileUpload({
     useTempFiles : true,
     tempFileDir : './uploads'
 }));
 
 // Middleware
-// Apis: express.json()
-// Formularios: express.urlencode()
 app.use(express.urlencoded({extended:false}))
 app.use(methodOverride('_method'))
 app.use(session({ 

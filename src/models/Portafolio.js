@@ -22,6 +22,8 @@ const portafolioSchema = new Schema(
         user:{
             type:String,
             required: true
+            // type:Schema.Types.ObjectId,
+            // ref: 'User'
         }
     },
     {
