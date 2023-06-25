@@ -1,6 +1,6 @@
 const mongosoe = require('mongoose')
 const {DBUSER, DBPASSWORD, DBNAME} = process.env
-const MONGODB_URL = `mongodb+srv://${DBUSER}:${DBPASSWORD}@cluster0.hcvxmir.mongodb.net/${DBNAME}`
+const MONGODB_URL = `mongodb+srv://${DBUSER}:${DBPASSWORD}@cluster0.gyfwtbm.mongodb.net/${DBNAME}`
 connection = async()=>{
     try{
         await mongosoe.connect(MONGODB_URL,{

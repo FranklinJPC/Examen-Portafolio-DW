@@ -10,8 +10,6 @@
                 <img class="img-fluid" src="{{image.secure_url}}" alt="..." />
             </div>
         </div>
-
-
 <!-- Portfolio Modals-->
 <!-- Portfolio Modal 1-->
 <div class="portfolio-modal modal fade" id="portfolioModal{{_id}}" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
@@ -35,10 +33,12 @@
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-4">{{description}}</p>
                             <p class="mb-4 text-decoration-underline fw-bold text-uppercase">{{category}}</p>
-                            <button class="btn btn-info" data-bs-dismiss="modal">
-                                <i class="fas fa-computer fa-fw"></i>
-                                Más información
-                            </button>
+                            <a href="/informacionPortafolio/{{_id}}">
+                                <button class="btn btn-info" data-bs-dismiss="modal">
+                                    <i class="fas fa-computer fa-fw"></i>
+                                    Más información
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
