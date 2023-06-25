@@ -3,7 +3,7 @@ const fs = require('fs-extra')
 const { uploadImage,deleteImage } = require('../config/cloudinary')
 
 const renderAllPortafolios = async (req,res)=>{
-    const portfolios = await Portfolio.find().lean()
+    const portfolios = await Portfolio.find({user:req.user._id}).lean()
     res.render("portafolio/allPortfolios",{portfolios})
 }
 
