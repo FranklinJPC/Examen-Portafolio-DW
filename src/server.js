@@ -11,7 +11,7 @@ const app = express()
 require('./config/passport')
 // Configuraciones
 // Variable que toma el puerto a la cual se desplega o la especificada (3003)
-app.set('port', process.env.port || 3003) 
+app.set('port', process.env.port || 3000) 
 app.set('views', path.join(__dirname, 'views'))
 app.engine('.hbs', engine({
     defaultLayout: 'main',  // Layout principal

@@ -16,7 +16,7 @@ module.exports.sendMailToUser = async(userMail,token)=>{
     from: 'admin@esfot.com',
     to: userMail,
     subject: "Verifica tu cuenta de correo electrónico",
-    html: `<a href="https://examen-portafolio-dw-production.up.railway.app/user/confirmar/${token}">Clic para confirmar tu cuenta</a>`,
+    html: `<a href="http://localhost:3000/user/confirmar/${token}">Clic para confirmar tu cuenta</a>`,
     });
     console.log("Message sent: %s", info.messageId);
 }
